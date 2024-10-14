@@ -1,0 +1,130 @@
+html,body{
+    background-color: rgb(250, 243, 243);
+    margin: 0px;
+    padding: 0px;
+    min-height: 100vh;
+}
+
+.bg-container{
+    margin-top: -90px;
+    height: 300px;
+    background-image: url("assets/images/background-pattern-desktop.svg");
+    background-size: 2000px 500px;
+    background-position: top 0px center;
+}
+
+.bg-pattern{
+    height: auto;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+}
+
+.star-logo{
+    max-width: 32px;
+}
+
+@media (max-width: 600px) {
+    .star-logo{
+        max-width: 1.25rem;
+    }
+}
+
+h1{
+    font-weight: 700;
+    font-size: 38px;
+    margin-left: 16px;
+}
+
+@media (max-width: 600px) {
+    h1{
+        font-size: 1.5rem;
+        font-weight: 800;
+        margin-left: 12px
+    }
+}
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faq-card{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background-color: hsl(275, 100%, 97%);
+    max-width: 400px;
+    border-radius: 20px;
+    padding: 30px;
+    padding-top: 16px;
+    padding-bottom: 20px;
+    box-shadow: 0 0.08px 18px rgb(75, 59, 112);
+    transform: translate(100%, -30%);
+}
+
+@media (max-width: 600px) {
+    .faq-card{
+        max-width: 280px;
+        padding: 20px;
+        transform: translate(25%, -30%);
+    }
+}
+
+.faq-container{
+    display: flex;
+    align-items: center;
+}
+
+.faq-icon{
+    display: flex;
+    align-items: center;
+}
+
+.add-icon{
+    width: 24px;
+    position: absolute;
+    right: 30px;
+    cursor: pointer;
+    background-size: contain;
+    transition: 0.3s;
+}
+
+.add-icon:active{
+    transform: scale(0.85);
+}
+
+.faq{
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(30, 15, 44);
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .faq{
+        font-size: 0.975rem;
+        max-width: 200px;
+    }
+}
+
+.faq:hover{
+    color: rgb(146, 69, 218);
+}
+
+.faq-response{
+    margin-top: 0px;
+    margin-bottom: 16px;
+    font-size: 0.975rem;
+    color: rgb(167, 127, 170);
+    line-height: 150%;
+}
+
+@media (max-width: 600px) {
+    .faq-response{
+        font-size: 0.875rem;
+    }
+}
